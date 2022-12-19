@@ -4,7 +4,7 @@ const MeetupList = ({ meetups }) => {
   return (
     <div className={container.grid}>
       {meetups.map((meetup) => {
-        return <MeetupItem {...meetup} />;
+        return <MeetupItem {...meetup} key={meetup.id} />;
       })}
     </div>
   );
