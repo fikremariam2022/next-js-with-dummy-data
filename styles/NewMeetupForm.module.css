@@ -1,0 +1,42 @@
+.form {
+  padding: 20px;
+  min-width: 30%;
+  max-width: 700px;
+}
+.form label {
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 4px;
+}
+.form input,
+.form textarea {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+.form textarea {
+  height: 250px;
+}
+.form button {
+  float: right;
+  height: 40px;
+  width: 120px;
+  font-size: large;
+  color: white;
+  background-color: rgb(229, 43, 43);
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (max-width: 500x) {
+  .form {
+    max-width: 100% !important;
+    color: red;
+  }
+  .form input,
+  .form textarea {
+    width: unset !important;
+    height: 60px;
+  }
+}
